@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "Londrina Solid";
+    src: url("/resources/fonts/LondrinaSolid-Light.ttf");
+}
+
+body {
+    margin: 0;
+    background-color: #474747;
+    font-family: "Londrina Solid", sans-serif;
+    color: #51545f;
+}
+
+#game-area {
+    width: 768px;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+    background-image: url("/resources/projects/technovators-mobile-platformer-game/backgroundEmpty.png");
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+}
+
+#player {
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+    position: absolute;
+    left: 180px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* CHARACTER RUNNING SPRITE */
+.run {
+    background-image: url("https://i.gifer.com/origin/ac/acf3abb6da430dd78cc99f925bb52d49.gif");
+}
+
+/* CHARACTER JUMPING SPRITE */
+.jump {
+    background-image: url("https://img.favpng.com/15/13/16/super-mario-bros-luigi-mario-sonic-at-the-olympic-games-png-favpng-aKtF5F0Muc3CvcR2LvjgvWQVD.jpg");
+}
+
+/* CHARACTER CRASHING SPRITE */
+.crash {
+    background-image: url("https://www.pngfind.com/pngs/m/682-6827458_8-bit-mario-die-hd-png-download.png");
+}
+
+/* TILE WITHOUT GRASS */
+.block {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    background-image: url("/resources/projects/technovators-mobile-platformer-game/platformPack_tile_regular.png");
+    background-size: cover;
+}
+
+/* TILE WITH GRASS ON TOP */
+.top {
+    background-image: url("/resources/projects/technovators-mobile-platformer-game/platformPack_tile_top.png");
+}
+
+/* COIN SPRITE */
+.coin {
+    background-image: url("https://i.gifer.com/origin/e0/e02ce86bcfd6d1d6c2f775afb3ec8c01_w200.gif");
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+/* FINISH SIGN SPRITE*/
+#finishSign {
+    
+    width: 150px;
+    height: 150px;
+    background-image: url("https://mario.wiki.gallery/images/f/f6/NSMBW_Flagpole_Artwork.png");
+    position: absolute;
+}
+
+#coins {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#platforms {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+}
+
+h1 {
+    margin-left: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    position: absolute;
+}
